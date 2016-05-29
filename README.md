@@ -1,6 +1,7 @@
 # iOS-objc-Adapter
 iOS适配器模式Demo
 ---
+[Objective-C Demo下载地址](https://github.com/Sovsar/iOS-objc-Adapter)
 ## 模式的定义
 
 **适配器模式**把一个类的接口变换成用户所期待的另一种接口，从而使原本因接口不匹配而无法在一起工作的两个类能够在一起工作。
