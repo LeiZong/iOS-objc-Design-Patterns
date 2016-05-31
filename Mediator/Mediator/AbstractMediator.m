@@ -10,7 +10,7 @@
 
 @implementation AbstractMediator
 
-- (void)colleagueEvent:(AbstractColleague *)event {
+- (void)colleague:(AbstractColleague *)event sendMesage:(NSString *)message {
     
 }
 

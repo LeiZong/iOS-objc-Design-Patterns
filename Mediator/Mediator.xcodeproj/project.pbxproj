@@ -15,8 +15,8 @@
 		99CAB9291CCA85B900C014A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99CAB9271CCA85B900C014A8 /* LaunchScreen.storyboard */; };
 		99CAB9321CCA85F600C014A8 /* AbstractMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = 99CAB9311CCA85F600C014A8 /* AbstractMediator.m */; };
 		99CAB9351CCA861100C014A8 /* AbstractColleague.m in Sources */ = {isa = PBXBuildFile; fileRef = 99CAB9341CCA861100C014A8 /* AbstractColleague.m */; };
-		99CAB9381CCA880600C014A8 /* TypeOneMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = 99CAB9371CCA880600C014A8 /* TypeOneMediator.m */; };
-		99CAB93E1CCA893C00C014A8 /* Colleague.m in Sources */ = {isa = PBXBuildFile; fileRef = 99CAB93D1CCA893C00C014A8 /* Colleague.m */; };
+		99CAB9381CCA880600C014A8 /* ChatRoomMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = 99CAB9371CCA880600C014A8 /* ChatRoomMediator.m */; };
+		99CAB93E1CCA893C00C014A8 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 99CAB93D1CCA893C00C014A8 /* User.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,10 +34,10 @@
 		99CAB9311CCA85F600C014A8 /* AbstractMediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractMediator.m; sourceTree = "<group>"; };
 		99CAB9331CCA861100C014A8 /* AbstractColleague.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractColleague.h; sourceTree = "<group>"; };
 		99CAB9341CCA861100C014A8 /* AbstractColleague.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractColleague.m; sourceTree = "<group>"; };
-		99CAB9361CCA880600C014A8 /* TypeOneMediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TypeOneMediator.h; sourceTree = "<group>"; };
-		99CAB9371CCA880600C014A8 /* TypeOneMediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TypeOneMediator.m; sourceTree = "<group>"; };
-		99CAB93C1CCA893C00C014A8 /* Colleague.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Colleague.h; sourceTree = "<group>"; };
-		99CAB93D1CCA893C00C014A8 /* Colleague.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Colleague.m; sourceTree = "<group>"; };
+		99CAB9361CCA880600C014A8 /* ChatRoomMediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatRoomMediator.h; sourceTree = "<group>"; };
+		99CAB9371CCA880600C014A8 /* ChatRoomMediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatRoomMediator.m; sourceTree = "<group>"; };
+		99CAB93C1CCA893C00C014A8 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		99CAB93D1CCA893C00C014A8 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +56,8 @@
 			children = (
 				99CAB9301CCA85F600C014A8 /* AbstractMediator.h */,
 				99CAB9311CCA85F600C014A8 /* AbstractMediator.m */,
-				99CAB9361CCA880600C014A8 /* TypeOneMediator.h */,
-				99CAB9371CCA880600C014A8 /* TypeOneMediator.m */,
+				99CAB9361CCA880600C014A8 /* ChatRoomMediator.h */,
+				99CAB9371CCA880600C014A8 /* ChatRoomMediator.m */,
 			);
 			name = Mediator;
 			sourceTree = "<group>";
@@ -67,8 +67,8 @@
 			children = (
 				99CAB9331CCA861100C014A8 /* AbstractColleague.h */,
 				99CAB9341CCA861100C014A8 /* AbstractColleague.m */,
-				99CAB93C1CCA893C00C014A8 /* Colleague.h */,
-				99CAB93D1CCA893C00C014A8 /* Colleague.m */,
+				99CAB93C1CCA893C00C014A8 /* User.h */,
+				99CAB93D1CCA893C00C014A8 /* User.m */,
 			);
 			name = Colleague;
 			sourceTree = "<group>";
@@ -186,8 +186,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				99CAB9211CCA85B900C014A8 /* ViewController.m in Sources */,
-				99CAB93E1CCA893C00C014A8 /* Colleague.m in Sources */,
-				99CAB9381CCA880600C014A8 /* TypeOneMediator.m in Sources */,
+				99CAB93E1CCA893C00C014A8 /* User.m in Sources */,
+				99CAB9381CCA880600C014A8 /* ChatRoomMediator.m in Sources */,
 				99CAB91E1CCA85B900C014A8 /* AppDelegate.m in Sources */,
 				99CAB9351CCA861100C014A8 /* AbstractColleague.m in Sources */,
 				99CAB9321CCA85F600C014A8 /* AbstractMediator.m in Sources */,

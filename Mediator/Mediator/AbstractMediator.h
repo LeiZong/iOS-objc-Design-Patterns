@@ -19,6 +19,6 @@
  *
  *  @param event Colleague类
  */
-- (void)colleagueEvent:(AbstractColleague *)event;
+- (void)colleague:(AbstractColleague *)event sendMesage:(NSString *)message;
 
 @end

@@ -7,8 +7,8 @@
 //
 
 #import "ViewController.h"
-#import "TypeOneMediator.h"
-#import "Colleague.h"
+#import "ChatRoomMediator.h"
+#import "User.h"
 
 @interface ViewController ()
 
@@ -18,27 +18,26 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    TypeOneMediator *mediator = [TypeOneMediator new];
-    Colleague *colleagueA = [[Colleague alloc] init];
-    Colleague *colleagueB = [[Colleague alloc] init];
-    Colleague *colleagueC = [[Colleague alloc] init];
-    mediator.colleagueA = colleagueA;
-    mediator.colleagueB = colleagueB;
-    mediator.colleagueC = colleagueC;
 
-    colleagueA.delegate = mediator;
-    colleagueB.delegate = mediator;
-    colleagueC.delegate = mediator;
+    /**
+     *  通过中介者模式简单实现 聊天室 的功能，当user发出一条消息时，同一个聊天室内的user都会收到这条消息
+     */
+    ChatRoomMediator *mediator = [[ChatRoomMediator alloc] init];
+    User *userA = [[User alloc] initWithName:@"Tom"];
+    User *userB = [[User alloc] initWithName:@"Jerry"];
+    User *userC = [[User alloc] initWithName:@"Kitty"];
 
-    [colleagueA changeValue:2];
-    NSLog(@"%@",mediator.values);
+    mediator.userA = userA;
+    mediator.userB = userB;
+    mediator.userC = userC;
 
-    [colleagueA changeValue:1];
-    NSLog(@"%@",mediator.values);
-}
+    userA.delegate = mediator;
+    userB.delegate = mediator;
+    userC.delegate = mediator;
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
+    [userA sendMessage:@"I'm Tom!"];
+    [userB sendMessage:@"I'm Jerry!"];
+    [userC sendMessage:@"I'm Kitty!"];
 }
 
 @end

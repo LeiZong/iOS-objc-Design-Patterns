@@ -14,9 +14,9 @@
  */
 @protocol ColleagueDelegate <NSObject>
 
-@optional
+@required
 
-- (void)colleagueEvent:(AbstractColleague *)event;
+- (void)colleague:(AbstractColleague *)event sendMesage:(NSString *)message;
 
 @end
 
