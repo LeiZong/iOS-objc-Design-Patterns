@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Pdh-eS-cFA">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="Ej7-pO-05Y">
+            <objects>
+                <navigationController id="Pdh-eS-cFA" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="sTj-Ll-HUt">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Dgq-XX-6Jn"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vFb-iY-qYg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2777" y="313"/>
+        </scene>
+        <!--ViewController-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ow8-Qy-OOu">
+                                <rect key="frame" x="213" y="285" width="174" height="30"/>
+                                <color key="backgroundColor" red="0.1819601342162972" green="1" blue="0.79560347888783767" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Push SendViewController">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="rMK-E7-x1z" kind="show" id="dzB-Ka-PTH"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Notification" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="law-cR-SMx">
+                                <rect key="frame" x="213" y="348" width="174" height="26"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="epv-Uy-9C2">
+                                <rect key="frame" x="221" y="247" width="158" height="30"/>
+                                <color key="backgroundColor" red="0.39771240084563364" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Change Person's name">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="changeName:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZXJ-bZ-fmI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ow8-Qy-OOu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HaD-Fc-EWT"/>
+                            <constraint firstItem="law-cR-SMx" firstAttribute="width" secondItem="Ow8-Qy-OOu" secondAttribute="width" id="No8-AT-IAb"/>
+                            <constraint firstItem="Ow8-Qy-OOu" firstAttribute="top" secondItem="epv-Uy-9C2" secondAttribute="bottom" constant="8" id="VlB-9k-1CL"/>
+                            <constraint firstItem="Ow8-Qy-OOu" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="azG-kH-Rxr"/>
+                            <constraint firstItem="law-cR-SMx" firstAttribute="centerX" secondItem="Ow8-Qy-OOu" secondAttribute="centerX" id="h5V-Jk-tmy"/>
+                            <constraint firstItem="law-cR-SMx" firstAttribute="top" secondItem="Ow8-Qy-OOu" secondAttribute="bottom" constant="33" id="oeS-c4-MJB"/>
+                            <constraint firstItem="epv-Uy-9C2" firstAttribute="centerX" secondItem="Ow8-Qy-OOu" secondAttribute="centerX" id="uD6-CE-7It"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="ViewController" id="af9-z8-JVJ"/>
+                    <connections>
+                        <outlet property="notifLable" destination="law-cR-SMx" id="DHK-JA-daP"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="-2024" y="313"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="UDk-5P-fje">
+            <objects>
+                <viewController id="rMK-E7-x1z" customClass="SecondViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9w1-oW-kau"/>
+                        <viewControllerLayoutGuide type="bottom" id="jCa-la-fqn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IhG-s3-HbK">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bi0-Gf-hTu">
+                                <rect key="frame" x="241" y="285" width="119" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.02053295671066202" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Send Notification">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="sendNotification:" destination="rMK-E7-x1z" eventType="touchUpInside" id="soo-CD-txU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bi0-Gf-hTu" firstAttribute="centerX" secondItem="IhG-s3-HbK" secondAttribute="centerX" id="Fyk-MJ-Gcq"/>
+                            <constraint firstItem="bi0-Gf-hTu" firstAttribute="centerY" secondItem="IhG-s3-HbK" secondAttribute="centerY" id="m65-5v-FeO"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8cC-lh-eSx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1372" y="313"/>
+        </scene>
+    </scenes>
+</document>
