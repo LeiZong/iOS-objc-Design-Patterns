@@ -4,6 +4,8 @@
 
 [中介者模式地址](https://github.com/LeiZong/iOS-objc-Design-Patterns/blob/master/Mediator/Mediator%20Document/Mediator.md)
 
+[观察者模式地址](https://github.com/LeiZong/iOS-objc-Design-Patterns/blob/master/ObserverPattern/ObserverPattern.md)
+
 ## 适配器模式的定义
 
 **适配器模式**把一个类的接口变换成用户所期待的另一种接口，从而使原本因接口不匹配而无法在一起工作的两个类能够在一起工作。
